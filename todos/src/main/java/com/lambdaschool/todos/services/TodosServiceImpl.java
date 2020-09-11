@@ -19,8 +19,8 @@ public class TodosServiceImpl implements TodosService
     @Override
     public void markComplete(long todoid)
     {
-        Todos completedtodo = todosrepos.findById(todoid)
+        Todos myTodo = todosrepos.findById(todoid)
                 .orElseThrow(() -> new EntityNotFoundException("Todo " + todoid + " Not found"));
-        completedtodo.setCompleted(true);
+        myTodo.setCompleted(true);
     }
 }

@@ -17,12 +17,12 @@ public class Todos extends Auditable // added auditing
     private String description;
 
     @Column(nullable = false)
-    private boolean completed;
+    private boolean completed = false;
 
     // foreign key relationship to User
     @ManyToOne
     @JoinColumn(name = "userid", nullable = false)
-    @JsonIgnoreProperties(value = "todos")
+//    @JsonIgnoreProperties(value = "todos")
     private User user;
 
     // default constructor
@@ -69,5 +69,15 @@ public class Todos extends Auditable // added auditing
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "Todos{" +
+                "todoid=" + todoid +
+                ", description='" + description + '\'' +
+                ", completed=" + completed +
+                ", user=" + user +
+                '}';
     }
 }
