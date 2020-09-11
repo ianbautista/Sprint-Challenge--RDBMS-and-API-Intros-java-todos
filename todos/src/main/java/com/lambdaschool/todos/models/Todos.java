@@ -13,7 +13,7 @@ public class Todos extends Auditable // added auditing
     @Column(nullable = false)
     private long todoid;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 10000)
     private String description;
 
     @Column(nullable = false)
