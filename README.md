@@ -1756,14 +1756,14 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Start with the provided todo application
-- [ ] Push commits: `git push origin <firstName-lastName>`
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Start with the provided todo application
+- [x] Push commits: `git push origin <firstName-lastName>`
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
@@ -1774,6 +1774,7 @@ You will be creating a REST api service to store and read data from an H2 databa
 - [ ] The initial application contains the model for the users table. Endpoints are already created and the structure for auditing fields is in place. You are adding the model for the todos table and updating the services to work with the new table.
 
 - [ ] TODOS
+
   - `todoid` primary key, not null long
   - `description` string, not null
   - `completed` boolean. Note that for all new todos, default completed to false
@@ -1832,5 +1833,4 @@ In your solution, it is essential that you follow best practices and produce cle
 - [ ] GET /users/users/todos - lists the number of todos each user has that are NOT completed. Use a custom query to accomplish this!
   - Users with 0 todos do NOT have to be included in the list
   - Order the list by username!
-  
 - [ ] Add in 100 more random users each with a random number (0 - 3) of random todos. The todos descriptions should be something random as well. For my example, I picked Pokemon names!
