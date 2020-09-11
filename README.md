@@ -1788,7 +1788,7 @@ The following end points are already available in the initial application. You a
 
 - [x] GET /users/users - return all of the users and their todos.
 
-- [ ] GET /users/user/{userid} - return the user and their todos based off of user id.
+- [x] GET /users/user/{userid} - return the user and their todos based off of user id.
 
 - [ ] POST /users/user - adds a user with their todos
 
