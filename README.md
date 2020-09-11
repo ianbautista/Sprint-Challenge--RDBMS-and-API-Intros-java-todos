@@ -1790,7 +1790,7 @@ The following end points are already available in the initial application. You a
 
 - [x] GET /users/user/{userid} - return the user and their todos based off of user id.
 
-- [ ] POST /users/user - adds a user with their todos
+- [x] POST /users/user - adds a user with their todos
 
   You can use the following to test this!
 
@@ -1810,9 +1810,9 @@ The following end points are already available in the initial application. You a
   }
   ```
 
-- [ ] PATCH /todos/todo/{todoid} - mark a todo as completed.
+- [x] PATCH /todos/todo/{todoid} - mark a todo as completed.
 
-- [ ] DELETE /users/user/{userid} - Deletes a user based off of their userid and deletes all their associated todos.
+- [x] DELETE /users/user/{userid} - Deletes a user based off of their userid and deletes all their associated todos.
 
 ### Required best practices
 

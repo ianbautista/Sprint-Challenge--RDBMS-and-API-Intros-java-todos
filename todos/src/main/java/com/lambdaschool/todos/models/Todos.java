@@ -22,7 +22,7 @@ public class Todos extends Auditable // added auditing
     // foreign key relationship to User
     @ManyToOne
     @JoinColumn(name = "userid", nullable = false)
-//    @JsonIgnoreProperties(value = "todos")
+    @JsonIgnoreProperties(value = "todos")
     private User user;
 
     // default constructor
