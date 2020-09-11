@@ -1786,7 +1786,7 @@ You will be creating a REST api service to store and read data from an H2 databa
 
 The following end points are already available in the initial application. You are to make sure the end points work with the newly added todos table
 
-- [ ] GET /users/users - return all of the users and their todos.
+- [x] GET /users/users - return all of the users and their todos.
 
 - [ ] GET /users/user/{userid} - return the user and their todos based off of user id.
 
